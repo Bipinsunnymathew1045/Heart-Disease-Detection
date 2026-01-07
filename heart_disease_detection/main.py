@@ -1,16 +1,11 @@
 import streamlit as st
 import pandas as pd
-from pathlib import Path
 import joblib
 
 
 st.title('Heart Disease Prediction')
 
-BASE_DIR = Path(__file__).parent
-MODEL_PATH = BASE_DIR / "Heart_disease_detection_new.joblib"
-
-
-data=joblib.load(MODEL_PATH)
+data=joblib.load('Heart_disease_detection_new.joblib')
 
 label_x=data['LabelEncoder_x']
 label_y = data['LabelEncoder_y']
