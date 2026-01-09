@@ -5,14 +5,10 @@ import joblib
 
 st.title('Heart Disease Prediction')
 
-<<<<<<< HEAD
 file_path = os.path.join(os.path.dirname(__file__), "Heart_disease_detection_new.joblib")
 
 data = joblib.load(file_path)
 
-=======
-data=joblib.load('Heart_disease_detection_new.joblib')
->>>>>>> 88b3deb04c9f2dda049b678900440320433f7da3
 
 label_x=data['LabelEncoder_x']
 label_y = data['LabelEncoder_y']
