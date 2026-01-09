@@ -5,7 +5,10 @@ import joblib
 
 st.title('Heart Disease Prediction')
 
-data=joblib.load('Heart_disease_detection_new.joblib')
+file_path = os.path.join(os.path.dirname(__file__), "Heart_disease_detection_new.joblib")
+
+data = joblib.load(file_path)
+
 
 label_x=data['LabelEncoder_x']
 label_y = data['LabelEncoder_y']
